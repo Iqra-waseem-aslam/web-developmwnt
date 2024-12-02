@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Protest+Guerrilla&family=Righteous&family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&family=Righteous&family=Rubik+Wet+Paint&display=swap');
+
+body {
+  font-family: "Protest Guerrilla", sans-serif;
+  background-color: #e9e9e9;
+  padding: 0;
+  margin: 0;
+}
+
+.protest-guerrilla-regular {
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+/* Logo Section */
+.logo {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.erased_tapes_logo {
+  width: 200px;
+  height: 200px;
+  transition: transform 0.5s ease, filter 0.5s ease; /* Smooth animation */
+}
+
+.erased_tapes_logo:hover {
+  transform: scale(1.1) rotate(5deg); /* Subtle zoom and rotation */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Add shadow effect */
+}
+
+/* Navigation Bar */
+.navbar {
+  background: linear-gradient(90deg, #ff6f61, #ff4f36); /* Vibrant gradient */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul li {
+  margin: 0 25px; /* Space between nav items */
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.nav ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: white;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #fff7f0; /* Lighter white for hover */
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.nav ul li a:hover::before {
+  width: 100%; /* Underline animation expands on hover */
+}
+
+/*These CSS properties control the main portion of the site (the white area you see).*/
+.container {
+  background-color: rgb(255, 255, 255);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+/* First Headings & Paragraphs */
+.firstphase h1, 
+.firstphase h3 {
+  font-family: "Protest Guerrilla", sans-serif;
+  text-align: left;
+  margin: 5; /* Remove any default margin */
+}
+
+.firstphase h1 {
+  margin-bottom: -50px; /* Slight overlap for an impactful design */
+  font-family:  "Protest Guerrilla", sans-serif;
+  font-size: 8em;
+  
+  color: #875932; /* A modern, clean dark color */
+}
+
+.firstphase h3 {
+  font-size: 3em;
+  font-family:  "Protest Guerrilla", sans-serif;
+  color: #ff4f36; /* Slightly lighter than h1 for hierarchy */
+  margin-bottom: 20px; /* Minimal spacing */
+}
+
+.firstphase p {
+  font-size: 1.5em; /* Standard, readable font size */
+  font-family: "Josefin Sans", sans-serif;
+  margin: 5px 0; /* Minimal top and bottom spacing */
+  line-height: 1.5; /* Slightly compact but readable */
+  color: #000000; /* Subtle color for supporting text */
+}
+
+.firstphase {
+  margin-left: 2%; /* Slight indent for elegance */
+}
+
+
+/* Column Container */
+.columns_container {
+  column-count: 3; /* Maintains the 3-column layout */
+  column-gap: 40px; /* Adds spacing between columns */
+  padding: 20px; /* Padding around the content for better layout */
+  background-color: #f9f9f9; /* Light background for a clean look */
+  border: 1px solid #e0e0e0; /* Subtle border to define the container */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgb(222, 89, 53); /* Soft shadow for depth */
+}
+
+/* Individual Headings */
+.columns_container h3 {
+ font-size: 1.8em;
+  color: #ff6f61; /* A highlight color for headings */
+  margin-top: 0; /* Adjust margin to prevent excess space */
+}
+
+/* Paragraphs inside the columns */
+.columns_container p {
+  font-size: 39px;
+  font-family: ";Josefin Sans", sans-serif;
+  line-height: 1.8;
+  margin-bottom: 20px; /* Add space between paragraphs */
+  text-align: justify; /* Justify text for a professional appearance */
+  color: #000000; /* Neutral color for text */
+}
+
+
+/*These CSS properties control the flow of the text right after the big paragraph. Using columns_container helps to maintain
+the three-column flow of the site and replicate the wireframe as per specifications*/
+
+.columns_container {
+  padding-top: 20px;
+  column-count: 3;
+  column-gap: 9px;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+}
+
+.columns_container h3 {
+  font-family:  "Protest Guerrilla", sans-serif;
+  font-size: 3.4em;
+}
+
+.columns_container p {
+  font-family: "Josefin Sans", sans-serif;;
+  line-height: 28px;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+/* Grid Container */
+.grid_container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; /* Added a gap for better separation */
+}
+
+/* Featured Album */
+.featured-album {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-album img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 10px; /* Rounded corners for a softer look */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animation */
+}
+
+/* Album Covers */
+.album-covers {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px; /* Added gap between images */
+}
+
+.album-cover img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px; /* Rounded corners for consistency */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover animation */
+}
+
+/* Hover Effects */
+.featured-album img:hover,
+.album-cover img:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  cursor: pointer; /* Change cursor to pointer to indicate interactivity */
+  filter: brightness(1.1); /* Slight brightness increase */
+}
+
+/* Optional: Add subtle border glow */
+.featured-album img:hover,
+.album-cover img:hover {
+  border: 2px solid #ff6f61; /* Highlight border on hover */
+}
+
+
+/*These CSS properties control the author portion of the page.*/
+
+.author-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.author-textcontent {
+  color: #000000;
+  font-size: 1em;
+  
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20%;
+}
+
+.author-textcontent h2 {
+  font-size: 3.4em;
+  color:rgb(181, 73, 33) ;
+  font-family:  "Protest Guerrilla", sans-serif;
+  padding-left: 10%;
+  margin: 0;
+}
+
+.author-image {
+  margin-right: 20%;
+}
+
+.author-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*These CSS properties control the footer*/
+.footer-portion {
+  background-color: #000000;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: medium;
+}
+ 
+
+
+
+/*The responsive design for Small mobile devices (360px >>) starts here.*/
+@media(max-width: 360px) { 
+
+  /* Logo */
+  .erased_tapes_logo {
+      width: 80px;
+  }
+
+  /* Navbar portion */
+  .navbar {
+      margin-top: 12px;
+      text-align: center;
+  }
+
+  .nav ul li {
+      display: inline-block;
+      margin-right: 12px;
+  }
+
+  /* Main container */
+  .container {
+    background-color: rgb(228, 148, 111);  /* Light brown background */
+    width: 100%;
+    margin: 0;
+    padding: 10px;  /* Add padding to ensure text isn't cramped */
+  }
+
+  /* First Headings & Paragraphs */
+  .firstphase h1,
+  .firstphase h3 {
+      text-align: center;
+  }
+
+  .firstphase h1 {
+      margin-bottom: -70px;
+      font-size: 4.5em;  /* Adjusted font size for mobile */
+  }
+
+  .firstphase h3 {
+      font-size: 3.5em;  /* Adjusted font size for mobile */
+  }
+
+  .firstphase p {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    margin-right: .5%;
+  }
+
+  .firstphase {
+      margin-left: 1.5%;
+  }
+
+  /* Column container */
+  .columns_container {
+      column-count: 1;  /* One column for smaller devices */
+      column-gap: 10px;  /* Small gap for mobile */
+  }
+
+  /* Image grid portion */
+  .featured-album {
+      display: none; /* Hide featured album on mobile */
+  }
+
+  .album-covers {
+      grid-template-columns: 1fr;  /* Adjust for single column */
+      grid-template-rows: repeat(4, auto);  /* Stack the items */
+  }
+
+  .album-cover img {
+      width: 100%; 
+      max-width: 100%;
+  }
+
+  /* Author portion */
+  .author-container {
+      flex-direction: column-reverse;  /* Stack image below text */
+      align-items: center;
+      text-align: center;
+      margin: 50px 0;
+  }
+
+  .author-image {
+      margin-top: 20px;  /* Space between the text and image */
+  }
+
+  .author-textcontent {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .author-textcontent h2 {
+      font-size: 2.5em;  /* Adjust for small screens */
+      text-align: center;
+      margin-right: 20px;
+  }
+
+  .author-textcontent p {
+      font-size: 1em;  /* Adjust paragraph text size */
+      text-align: left;
+  }
+
+  /* Additional Styles for Interactivity */
+  .author-container {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.3s; 
+    padding: 20px;
+    border-radius: 15px; /* Slight rounding for a modern look */
+  }
+
+  /* Hover Effect for Author Container */
+  .author-container:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); 
+    background-color: rgba(255, 111, 97, 0.1); 
+  }
+
+  /* Hover Effect for Author Image */
+  .author-image img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  }
+
+  .author-container:hover .author-image img {
+    transform: scale(1.2); 
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); 
+  }
+
+  /* Hover Effect for Author Text */
+  .author-container:hover .author-textcontent h2 {
+    color: #ff6f61; 
+  }
+
+  .author-container:hover .author-textcontent p {
+    color: #333; 
+  }
+}
+
+ 
